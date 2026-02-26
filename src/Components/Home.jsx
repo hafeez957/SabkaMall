@@ -1,12 +1,11 @@
 import React from 'react'
 import '../assets/styles/home.css'
-import Sliders from './Bootstrap Pages/Sliders'
 
 const Home = () => {
   return (
     < >
       <div className="home">
-        <Sliders/>
+      <h1>home</h1>
       </div>
     </ >
   )
