@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+    background: linear-gradient(to right,blue 30%,pink 70%);
+    .logo{
+        width: 15%;
+        height: 7vh;
+         img{
+            height: 60px;
+         border-radius: 10px;
+
+        }
+    }
+    .search{
+        input{
+            width: 20vw;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            /* margin-top: 10px;  */
+        }
+        &:focus{
+            border: none;
+        }
+        .icon{
+            position: relative;
+            top: px;
+            right: 30px;
+            border: none;
+            background-color: transparent;
+        }
+    }
+    .links{
+        ul{
+            display: flex;
+            list-style: none;
+            margin: 1.5vh 0;
+            gap: 20px;
+            .link{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
