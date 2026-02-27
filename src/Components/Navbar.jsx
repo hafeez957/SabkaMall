@@ -12,7 +12,7 @@ const Navbar = () => {
             <img src={logo} alt="" />
         </div>
         <div className="search">
-            <input type="search" name="" id="" />
+            <input type="search" name="" id="" placeholder='Search Products'/>
             <button className='icon'><SearchIcon/></button>
         </div>
         <div className="links">
