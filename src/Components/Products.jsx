@@ -1,7 +1,9 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import '../assets/styles/products.css'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import DeleteIcon from '@mui/icons-material/Delete';
+import ReadMoreIcon from '@mui/icons-material/ReadMore';
 
 const Products = () => {
   let [products, setProducts] = useState([])
@@ -29,6 +31,25 @@ const Products = () => {
 
 
   // console.log(filtered_products);
+
+  let navigate=useNavigate()
+
+
+  let handleDetails=(id)=>{
+    navigate(`/adminportal/viewmore/${id}`)
+  }
+
+  let handleDelete=(id)=>{
+   let bool= confirm("Do you want to delete this product?")
+    if(bool){
+      axios.delete(`http://localhost:4000/products/${id}`)
+      alert("Product is deleted")
+      window.location.reload()
+    }else{
+
+      alert("Product is not deleted")
+    }
+  }
   return (
     < >
 
@@ -49,16 +70,16 @@ const Products = () => {
         
         
         filtered_data.map((ele) => {
-        let {title,price,description,image}=ele;
+        let {id,title,price,description,image}=ele;
         return(
           <div className="card">
             <h4>{title}</h4>
             <img src={image} alt="" />
             {/* <p>{description}</p> */}
-             <button>${price}</button> 
+             <button>Rs. {price*90}/-</button> 
             <div className="info">
-              <button>View More</button>
-            <button>Delete</button>
+              <button onClick={()=>{handleDetails(id)}} >View More</button>
+            <button onClick={()=>{handleDelete(id)}}><DeleteIcon/></button>
             </div>
           </div>
         )
