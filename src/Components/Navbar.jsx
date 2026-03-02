@@ -19,7 +19,7 @@ const Navbar = () => {
             <ul>
                 <li><NavLink className={'link'} to={'/adminportal/'}>Home</NavLink></li>
                 <li><NavLink className={'link'} to={'/adminportal/products'}>Products</NavLink></li>
-                <li><NavLink className={'link'}>Add products</NavLink></li>
+                <li><NavLink className={'link'} to={'/adminportal/addproduct'}>Add products</NavLink></li>
                 <li><NavLink className={'link'}>Users</NavLink></li>
                 <li><NavLink className={'link'}>Add Users</NavLink></li>
                 <li><NavLink>Logout</NavLink></li>

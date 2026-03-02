@@ -191,6 +191,19 @@
         "rate": 4.7,
         "count": 130
       }
+    },
+    {
+      "id": "8291",
+      "title": "DoomsDay",
+      "price": "124",
+      "description": "North Remembers",
+      "category": "men's clothing",
+      "image": "https://posterspy.com/wp-content/uploads/2024/10/Doomsday-by-VISCOM.jpg",
+      "rating": {
+        "rate": "3",
+        "count": "455"
+      }
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

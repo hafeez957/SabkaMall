@@ -1,0 +1,28 @@
+.add-product{
+    .formbox{
+        margin: 5vh auto;
+        border: 1px solid gray;
+        height: 100%;
+        width: 40%;
+        padding: 10px;
+        border-radius: 10px;
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center ;
+            gap: 15px;
+            input{
+                width: 40%;
+                padding: 10px;
+                border-radius: 15px;
+            }
+            button{
+                width: 20%;
+                padding: 8px;
+                border-radius: 15px;
+                background-color: greenyellow;
+            }
+        }
+    }
+}
