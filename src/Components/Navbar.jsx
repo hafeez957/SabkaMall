@@ -20,8 +20,8 @@ const Navbar = () => {
                 <li><NavLink className={'link'} to={'/adminportal/'}>Home</NavLink></li>
                 <li><NavLink className={'link'} to={'/adminportal/products'}>Products</NavLink></li>
                 <li><NavLink className={'link'} to={'/adminportal/addproduct'}>Add products</NavLink></li>
-                <li><NavLink className={'link'}>Users</NavLink></li>
-                <li><NavLink className={'link'}>Add Users</NavLink></li>
+                <li><NavLink className={'link'} to={'/adminportal/users'}>Users</NavLink></li>
+                <li><NavLink className={'link'} to={'/adminportal/addusers'}>Add Users</NavLink></li>
                 <li><NavLink>Logout</NavLink></li>
             </ul>
         </div>

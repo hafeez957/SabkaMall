@@ -12,11 +12,12 @@
             justify-content: center;
             align-items: center ;
             gap: 15px;
-            input{
+            input,select{
                 width: 40%;
                 padding: 10px;
                 border-radius: 15px;
             }
+            
             button{
                 width: 20%;
                 padding: 8px;

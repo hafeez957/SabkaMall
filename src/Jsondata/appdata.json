@@ -203,6 +203,76 @@
         "rate": "3",
         "count": "455"
       }
+    },
+    {
+      "id": "af9a",
+      "title": "Andrew Garfield",
+      "price": "899",
+      "description": "Spiderman Brand New Day",
+      "category": "men's clothing",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_LGOpimIJKHV38umFnX6lXNfTbMa3Exwfg&s",
+      "rating": {
+        "rate": "4",
+        "count": "234"
+      }
+    }
+  ],
+  "users": [
+    {
+      "username": "aisha",
+      "mobile": "9123456780",
+      "email": "aisha@gmail.com",
+      "password": "aisha123",
+      "dob": "21-07-2000",
+      "id": "c45k"
+    },
+    {
+      "username": "kiran",
+      "mobile": "9988776655",
+      "email": "kiran@gmail.com",
+      "password": "kiran123",
+      "dob": "18-11-1997",
+      "id": "d78m"
+    },
+    {
+      "username": "neha",
+      "mobile": "9090909090",
+      "email": "neha@gmail.com",
+      "password": "neha123",
+      "dob": "30-01-2001",
+      "id": "e56p"
+    },
+    {
+      "username": "fatima",
+      "mobile": "9012345678",
+      "email": "fatima@gmail.com",
+      "password": "fatima123",
+      "dob": "09-04-1999",
+      "id": "g23r"
+    },
+    {
+      "username": "vikram",
+      "mobile": "8899776655",
+      "email": "vikram@gmail.com",
+      "password": "vikram123",
+      "dob": "25-12-1995",
+      "id": "h67s"
+    },
+    {
+      "username": "sana",
+      "mobile": "9556677889",
+      "email": "sana@gmail.com",
+      "password": "sana123",
+      "dob": "02-08-2002",
+      "id": "i34t"
+    },
+    {
+      "username": "rohit",
+      "mobile": "9785612345",
+      "email": "rohit@gmail.com",
+      "password": "rohit123",
+      "dob": "17-10-1998",
+      "id": "j89u"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
