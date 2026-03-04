@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../assets/styles/landingpage.css'
+// import '../assets/styles/landingpage.css'
 import AdminLogin from './Admin/AdminLogin'
 import UserLogin from './User/UserLogin'
 

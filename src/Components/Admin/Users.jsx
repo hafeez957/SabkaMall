@@ -42,6 +42,7 @@ const Users = () => {
                     <th>Mobile Number</th>
                     <th>Email</th>
                     <th>Date Of Birth</th>
+                    <th>Age</th>
                     <th>Delete</th>
                 </tr>
             </thead>
@@ -49,7 +50,9 @@ const Users = () => {
                 {
                 users.map((ele,ind)=>{
                     let {id,username,mobile,email,dob}=ele
-
+                    // let age= ;
+                    console.log(new Date(dob).getFullYear())
+                    console.log(dob)
                     return(
                         <tr>
                             <td> {ind+1}  </td>
@@ -57,6 +60,7 @@ const Users = () => {
                             <td> {mobile} </td>
                             <td> {email} </td>
                             <td> {dob} </td>
+                            <td> {new Date().getFullYear()- new Date(dob).getFullYear()} </td>
                             <td>  <button className="delete" onClick={()=>{handleDelete(id)}}><DeleteIcon/></button> </td>
                         </tr>
                     )
