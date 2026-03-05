@@ -1,12 +1,14 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import '../assets/styles/products.css'
 import CloseIcon from '@mui/icons-material/Close';
 
 const ViewMore = () => {
     let params=useParams()
     console.log(params.id);
+
+    let navigate=useNavigate()
 
     let [card,setCard]=useState({})
 
@@ -21,11 +23,15 @@ const ViewMore = () => {
     console.log(card)
 
     let {title,image,price,description,category,rating}=card
+
+    let handlenavigate=()=>{
+      navigate('../products')
+    }
   return (
     < >
        <div className="viewmore">
                 <h1>{title}</h1>
-                <span className='icon'><CloseIcon/></span>
+                <span className='icon' onClick={handlenavigate}><CloseIcon/></span>
         <div className="card">
             <img src={image} alt="" />
             <div className="info">

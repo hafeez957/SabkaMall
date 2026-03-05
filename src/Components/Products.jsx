@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import '../assets/styles/products.css'
-import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import DeleteIcon from '@mui/icons-material/Delete';
 import ReadMoreIcon from '@mui/icons-material/ReadMore';
 
@@ -36,7 +36,7 @@ const Products = () => {
 
 
   let handleDetails=(id)=>{
-    navigate(`/adminportal/viewmore/${id}`)
+    navigate(`../viewmore/${id}`)
   }
 
   let handleDelete=(id)=>{
@@ -50,6 +50,10 @@ const Products = () => {
       alert("Product is not deleted")
     }
   }
+
+  let location=useLocation()
+
+  let bool=location.pathname.startsWith('/adminportal')
   return (
     < >
 
@@ -79,7 +83,7 @@ const Products = () => {
              <button>Rs. {price*90}/-</button> 
             <div className="info">
               <button onClick={()=>{handleDetails(id)}} >View More</button>
-            <button onClick={()=>{handleDelete(id)}}><DeleteIcon/></button>
+            {bool && <button onClick={()=>{handleDelete(id)}}><DeleteIcon/></button>}
             </div>
           </div>
         )

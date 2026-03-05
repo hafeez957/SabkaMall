@@ -25,13 +25,13 @@ const Navbar = () => {
                 <li><NavLink className={'link'} to={'/adminportal/addproduct'}>Add products</NavLink></li>
                 <li><NavLink className={'link'} to={'/adminportal/users'}>Users</NavLink></li>
                 <li><NavLink className={'link'} to={'/adminportal/addusers'}>Add Users</NavLink></li>
-                <li><NavLink>Logout</NavLink></li>
+                <li><NavLink to={'/'}>Logout</NavLink></li>
             </ul>:<ul>
                 <li><NavLink className={'link'} to={'/userportal'}>Home</NavLink></li>
                 <li><NavLink className={'link'} to={'/userportal/products'}>Products</NavLink></li>
                 <li><NavLink className={'link'} to={'/userportal/about '}>About us</NavLink></li>
                 <li><NavLink className={'link'} to={'/userportal/help '}>Help</NavLink></li>
-                <li><NavLink>Logout</NavLink></li>
+                <li><NavLink to={'/'}>Logout</NavLink></li>
             </ul>}
         </div>
       </div>
