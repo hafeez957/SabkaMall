@@ -36,7 +36,7 @@ const ViewMore = () => {
       console.log((data.data.id))
       axios.post('http://localhost:4000/cart', data.data)
       alert("Item added to cart")
-      navigate('/userportal/cart')
+      navigate('/userportal/cartitems')
     } else {
       alert("Item is not added to cart")
     }

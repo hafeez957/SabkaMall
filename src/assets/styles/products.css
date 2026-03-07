@@ -164,11 +164,48 @@
 
 
 .cart{
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
-    padding: 2vh 1vw;
-    .cart-card{
+    padding: 2vh 1vw; */
+
+    table{
+        margin: auto;
+        width: 90%;
+        text-align: center;
+        thead{
+            tr{
+                th{
+                    padding: 1vh ;
+                    table{
+                        /* margin: auto; */
+                        border: 2px dotted gray;
+                        text-align: center;
+                        thead{
+                            tr{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        tbody{
+            tr{
+                width: fit-content;
+                td img{
+                    height: 7vh;
+                    width:5vw;
+                }
+                td{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+
+    /* .cart-card{
         
         margin: 2vh auto;
         display: flex;
@@ -198,7 +235,7 @@
             flex-direction: column;
             margin: 5vh;
             justify-content: center;
-            /* align-items: center; */
+            /* align-items: center; 
 
             gap: 30px;
         
@@ -227,5 +264,5 @@
             transform: scale(1.1);
             transition: all ease-in 0.3s;
         }
-    }
+    } */
 }
