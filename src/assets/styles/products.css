@@ -103,14 +103,14 @@
         left: 1000px;
     }
     .card{
-        margin: 2vh auto;
+        margin: auto;
         display: flex;
         /* flex-direction: column; */
         /* flex-wrap: wrap; */
         /* border: 1px solid gray; */
         border-radius: 10px;
-        /* justify-content: center; */
-        /* align-items: center; */
+        /* justify-content: center;
+        align-items: c enter; */
         padding: 1vh 1vw;
         height: 80vh;
         width: 70%;
@@ -134,8 +134,9 @@
             gap: 30px;
         
         button{
+            margin: 1vh auto;
             border: none;
-            padding: 1vh 1vw;
+            padding: 1vh 8vw;
             border-radius: 10px;
             background-color: greenyellow;
             color: black;

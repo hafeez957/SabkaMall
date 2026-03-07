@@ -29,7 +29,7 @@ const Navbar = () => {
             </ul>:<ul>
                 <li><NavLink className={'link'} to={'/userportal'}>Home</NavLink></li>
                 <li><NavLink className={'link'} to={'/userportal/products'}>Products</NavLink></li>
-                <li><NavLink className={'link'} to={'/userportal/about '}>About us</NavLink></li>
+                <li><NavLink className={'link'} to={'/userportal/cartitems '}>Cart</NavLink></li>
                 <li><NavLink className={'link'} to={'/userportal/help '}>Help</NavLink></li>
                 <li><NavLink to={'/'}>Logout</NavLink></li>
             </ul>}
